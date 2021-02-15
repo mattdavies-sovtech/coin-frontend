@@ -1,0 +1,66 @@
+.coin-container {
+    border: 3px solid whitesmoke;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: auto;
+    background-color: white;
+  }
+.coin-container-outer {
+    background-color: rgb(67, 86, 97);
+    padding: 20px;
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+    width: 50%;
+    border-radius: 5px;
+    margin: auto;
+    overflow: auto;
+}
+
+.coin-container:hover {
+    transform: scale(1.02);
+    transition: all .2s ease-in-out;
+}
+
+.float-container {
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.coins-container {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+  .col {
+      float: right;
+      text-align: right;
+  }
+  
