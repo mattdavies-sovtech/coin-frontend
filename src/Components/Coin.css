@@ -1,14 +1,14 @@
 .coin-container {
     border: 3px solid whitesmoke;
     text-align: left;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     border-radius: 5px;
     overflow: auto;
     background-color: white;
   }
 .coin-container-outer {
-    background-color: rgb(67, 86, 97);
+    background-color: rgb(125, 172, 201);
     padding: 20px;
     width: 50%;
     text-align: left;
@@ -22,6 +22,11 @@
 .coin-container:hover {
     transform: scale(1.02);
     transition: all .2s ease-in-out;
+}
+
+.line-item {
+    display: inline-block;
+    padding-left: 20px;
 }
 
 .float-container {
