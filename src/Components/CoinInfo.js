@@ -23,12 +23,17 @@ function CoinInfo(idg) {
     if (data == undefined) return 'undefined';
     else {
     return(
+      <>
+        <div className="outer-header">
+          <div className="inner-header">
+          <h1>Market Data</h1>
+          </div>
+        </div>
         <div className="market-container">
         {data.coinMarket.map(({name,base,qoute,price,volume,time}) => (
             <div className="outer">
             <div className="inner">
                 <h1>{name}</h1>
-                <h2>{base}</h2>
                 <p>{qoute}</p>
                 <p>Price: {price}</p>
                 <p>Volume: {volume}</p>
@@ -37,6 +42,7 @@ function CoinInfo(idg) {
             </div>
           ))}
         </div>
+      </>
     )
 }
 }
